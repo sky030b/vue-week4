@@ -5,7 +5,7 @@ export default {
         <ul class="pagination">
             <li class="page-item" :class="{disabled: !pagination.has_pre}">
                 <a class="page-link" href="javascript:;" aria-label="Previous"
-                @click="getPageProducts(pagination.current_page - 1)">
+                @click.prevent="getPageProducts(pagination.current_page - 1)">
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
@@ -16,7 +16,7 @@ export default {
             </li>
             <li class="page-item" :class="{disabled: !pagination.has_next}">
                 <a class="page-link" href="javascript:;" aria-label="Next"
-                @click="getPageProducts(pagination.current_page + 1)">
+                @click.prevent="getPageProducts(pagination.current_page + 1)">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
             </li>
