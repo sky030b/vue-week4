@@ -1,7 +1,7 @@
 console.clear();
-// import Pagination from "./Pagination.js"
-import ProductModal from "./ProductModal.js"
-import DeleteModal from "./DeleteModal.js";
+// import Pagination from "./components/Pagination.js"
+import ProductModal from "./components/ProductModal.js"
+import DeleteModal from "./components/DeleteModal.js";
 
 const app = Vue.createApp({
     data() {
